@@ -164,6 +164,88 @@ main {
   cursor: pointer;
 }
 
+#hamburguer-menu-show {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}
+
+#hamburger-menu-show img {
+  width: 24px;
+  /* display: none; */
+}
+
+#mobile-menu {
+  min-width: 254px;
+  height: 100vh;
+  background-color: rgba(11, 13, 23, 0.15);
+  backdrop-filter: blur(25px); /* Desfoque aplicado ao fundo */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 32.95px;
+  padding-right: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+}
+
+#mobile-menu ul {
+  width: 219px;
+  position: absolute;
+  right: 0px;
+  top: 133px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+#mobile-menu li {
+  width: 100%;
+  border-right: 3px solid transparent;
+  transition: all;
+  cursor: pointer;
+}
+
+#mobile-menu li:hover {
+  border-right: 3px rgba(255, 255, 255, 0.5);
+  transition: ease-in-out 300ms;
+}
+#mobile-menu li:active {
+  border-right: 3px rgba(255, 255, 255);
+  transition: ease-in-out 300ms;
+}
+#mobile-menu li a {
+  font: 400 16px "Barlow Condensed";
+  letter-spacing: 2px;
+  line-height: 19.2%;
+  color: white;
+  text-decoration: none;
+}
+
+#mobile-menu li span {
+  margin-right: 12px;
+  font-weight: 600;
+}
+#mobile-menu ul a {
+  text-decoration: none;
+}
+#mobile-menu li:nth-child(1) {
+  border-right: 3px solid rgba(255, 255, 255);
+}
+
+#menu-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#menu-close > img {
+  width: 24px;
+}
+
 @media (max-width: 768px) {
   body {
     background-image: url(./assets/home/background-home-tablet.jpg);
@@ -234,7 +316,7 @@ main {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   body {
     background-image: url(./assets/home/background-home-mobile.jpg);
     height: 724px;
@@ -340,11 +422,19 @@ main {
   header > nav {
     height: 96px;
     width: 640px;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: end;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: transparent;
     position: relative;
     right: -40px;
+  }
+
+  #navBar {
+    display: none;
+  }
+  #hamburguer-menu-show {
+    display: block;
+    padding-right: 40px;
   }
 }
