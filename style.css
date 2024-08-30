@@ -13,15 +13,9 @@
   list-style: none;
 }
 
-html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-}
 body {
+  margin: auto;
   height: 1024px;
-  width: 1440px;
   max-width: 1440px;
   background-image: url(./assets/home/background-home-desktop.jpg);
   background-repeat: no-repeat;
@@ -135,7 +129,6 @@ main {
 #space-container p:nth-child(3) {
   font: 18px "Barlow";
   color: var(--blue-300);
-  font-weight: 400;
   line-height: 180%;
 }
 
@@ -169,4 +162,189 @@ main {
   outline: 88px solid rgba(255, 255, 255, 0.1);
   color: var(--blue-900-opacity);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(./assets/home/background-home-tablet.jpg);
+    width: 768px;
+    margin: auto;
+    padding: 0px 40px 0px;
+  }
+  header {
+    height: 96px;
+  }
+
+  #line {
+    width: 560px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: none;
+  }
+  header > nav {
+    height: 96px;
+    width: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: relative;
+    right: -40px;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 128px 0px;
+    width: 100%;
+  }
+  #main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 66px;
+    padding: 0px 88px;
+  }
+  #space-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 334px;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #explore-container {
+    min-width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #space-container p:nth-child(3) {
+    text-align: center;
+    font: 400 16px "Barlow";
+    color: var(--blue-300);
+    line-height: 180%;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(./assets/home/background-home-mobile.jpg);
+    height: 724px;
+    width: 375px;
+    margin: auto;
+    padding: 0px 24px 24px;
+  }
+  header {
+    height: 88px;
+  }
+
+  #line {
+    width: 560px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: none;
+  }
+  header > nav {
+    height: 88px;
+    width: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: relative;
+    right: -40px;
+  }
+  #navBar li {
+    cursor: pointer;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color;
+    border-bottom: 3px solid transparent;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px 0px;
+    width: 100%;
+  }
+  #main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 0px;
+    padding: 0px 0px;
+  }
+  #space {
+    color: white;
+    font: 80px "Bellefair";
+    line-height: 91.68px;
+  }
+  #space-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 294px;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #space-container p:nth-child(1) {
+    font: 16px "Barlow Condensed";
+    letter-spacing: 2.6px;
+    color: var(--blue-300);
+  }
+
+  #space-container p:nth-child(3) {
+    text-align: center;
+    font: 16px "Barlow";
+    color: var(--blue-300);
+    line-height: 27px;
+  }
+  #explore-container {
+    min-width: auto;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #explore {
+    height: 144px;
+    width: 144px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 18px "Bellefair";
+    letter-spacing: 0px;
+    color: var(--blue-900);
+    outline: 88px solid transparent;
+    transition: all 0.45s ease-in-out;
+  }
+  header > nav {
+    height: 96px;
+    width: 640px;
+    display: none;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: relative;
+    right: -40px;
+  }
 }
