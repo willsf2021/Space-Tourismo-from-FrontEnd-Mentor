@@ -25,7 +25,14 @@ body {
   padding: 40px 64px 0px;
   display: flex;
   flex-direction: column;
+  transition: all 0.5s ease;
 }
+
+.background-destination {
+  background-image: url(assets/destination/background-destination-desktop.jpg);
+  opacity: 100%;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -174,7 +181,6 @@ main {
 
 #hamburger-menu-show img {
   width: 24px;
-  /* display: none; */
 }
 
 #mobile-menu {
@@ -319,7 +325,7 @@ main {
 @media (max-width: 415px) {
   body {
     background-image: url(./assets/home/background-home-mobile.jpg);
-    height: 724px;
+    height: 792px;
     width: 375px;
     margin: auto;
     padding: 0px 24px 24px;
