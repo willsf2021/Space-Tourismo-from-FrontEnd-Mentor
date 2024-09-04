@@ -28,9 +28,10 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="destinations.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div id="logo">
         <img src="assets/shared/logo.svg" alt="logo" />
@@ -44,8 +45,8 @@
           <li>
             <a href="#"><span>00</span>HOME</a>
           </li>
-          <li>
-            <a href="#"><span>01</span>DESTINATION</a>
+          <li class="destination-explore-button">
+            <a><span>01</span>DESTINATION</a>
           </li>
           <li>
             <a href="#"><span>02</span>CREW</a>
@@ -56,26 +57,27 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div id="mobile-menu">
-        <button id="menu-close">
-          <img src="assets/shared/icon-close.svg" alt="menu-close" />
-        </button>
-        <ul>
-          <li>
-            <a href="#"><span>00</span>HOME</a>
-          </li>
-          <li>
-            <a href="#"><span>01</span>DESTINATION</a>
-          </li>
-          <li>
-            <a href="#"><span>02</span>CREW</a>
-          </li>
-          <li>
-            <a href="#"><span>03</span>TECHNOLOGY</a>
-          </li>
-        </ul>
-      </div>
+    <div id="mobile-menu">
+      <button id="menu-close">
+        <img src="assets/shared/icon-close.svg" alt="menu-close" />
+      </button>
+      <ul>
+        <li>
+          <a><span>00</span>HOME</a>
+        </li>
+        <li class="destination-explore-button">
+          <a><span>01</span>DESTINATION</a>
+        </li>
+        <li>
+          <a href="#"><span>02</span>CREW</a>
+        </li>
+        <li>
+          <a href="#"><span>03</span>TECHNOLOGY</a>
+        </li>
+      </ul>
+    </div>
+    <!-- HOMEPAGE -->
+    <main id="main">
       <div id="main-container">
         <div id="space-container">
           <p>SO, YOU WANT TO TRAVEL TO</p>
@@ -87,11 +89,45 @@
             world experience!
           </p>
         </div>
-        <div id="explore-container">
+        <div id="explore-container" class="destination-explore-button">
           <div id="explore"><p>EXPLORE</p></div>
         </div>
       </div>
     </main>
+    <!-- DESTINATION PAGE -->
+    <div id="destination">
+      <div id="title-picture-container">
+        <h1 id="pick-your-destination"><span>01</span>PICK YOUR DESTINATION</h1>
+        <div id="div-picture">
+          <img id="destination-picture" src="" alt="planet-picture" />
+        </div>
+      </div>
+      <div id="aside">
+        <ul id="nav-bar-aside">
+          <li id="moon" class="cosmos-item">MOON</li>
+          <li id="mars" class="cosmos-item">MARS</li>
+          <li id="europa" class="cosmos-item">EUROPA</li>
+          <li id="titan" class="cosmos-item">TITAN</li>
+        </ul>
+        <div id="title-description">
+          <h1 id="title-destination"></h1>
+          <p id="description-destination"></p>
+        </div>
+        <hr id="hr-destination" />
+        <div id="dist-travel-container">
+          <div id="agv-distance">
+            <p class="dist-time">AGV. DISTANCE</p>
+            <p class="dist-time-n" id="agv-distance-value"></p>
+          </div>
+          <div id="travel-time">
+            <p class="dist-time">EST. TRAVEL TIME</p>
+            <p class="dist-time-n" id="dist-time-value"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CREW PAGE -->
     <script src="script.js"></script>
+    <script src="routes.js"></script>
   </body>
 </html>
