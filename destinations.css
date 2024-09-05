@@ -10,7 +10,6 @@
 #destination {
   height: 888px;
   width: 1440px;
-  display: flex;
   column-gap: 32px;
   justify-content: center;
   padding: 48px 165px;
