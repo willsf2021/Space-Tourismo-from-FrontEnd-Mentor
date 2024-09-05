@@ -1,0 +1,122 @@
+:root {
+  /* Colors */
+  --blue-900: #0b0d17;
+  --blue-900-opacity: hsla(230, 35%, 7%, 0.5);
+  --blue-300: #d0d6f9;
+  --white: #ffff;
+}
+
+#crew-element {
+  padding: 48px 101px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+#meet-your-crew {
+  font: 400 28px "Barlow Condensed", sans-serif;
+  line-height: 33.6px;
+  letter-spacing: 4px;
+  color: white;
+  display: flex;
+  column-gap: 24px;
+}
+
+#meet-your-crew span {
+  font-weight: 700;
+  color: white;
+  letter-spacing: 4.72px;
+  opacity: 25%;
+}
+#left-side {
+  width: 539px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#commander {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+#commander-p-name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+#commander-p {
+  font: 400 32px "Bellefair", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 36.67px;
+}
+
+#commander-name {
+  font: 400 56px "Bellefair", sans-serif;
+  color: white;
+  line-height: 64.18px;
+}
+
+#commander-description {
+  font: 400 18px "Barlow", sans-serif;
+  color: var(--blue-300);
+  line-height: 32.4px;
+}
+
+#radios-buttons {
+  padding-bottom: 48px;
+  width: 100%;
+  display: flex;
+  column-gap: 40px;
+}
+
+#radios-buttons input {
+  appearance: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.1744);
+  border: 2px solid var(--grey-500-medium);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#radios-buttons input::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#radios-buttons input:checked::before {
+  background-color: white;
+  transition: background-color ease-in-out 200ms;
+}
+#right-side {
+  width: 539px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#back-ground {
+  width: 539px;
+  height: 676px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+}
