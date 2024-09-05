@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="destinations.css" />
+    <link rel="stylesheet" href="crew.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body class="body">
@@ -42,17 +43,17 @@
           <img src="assets/shared/icon-hamburger.svg" alt="" />
         </button>
         <ul id="navBar">
-          <li>
-            <a href="#"><span>00</span>HOME</a>
+          <li class="home-buttons">
+            <a><span>00</span>HOME</a>
           </li>
-          <li class="destination-explore-button">
+          <li class="destination-buttons">
             <a><span>01</span>DESTINATION</a>
           </li>
-          <li>
-            <a href="#"><span>02</span>CREW</a>
+          <li class="crew-buttons">
+            <a><span>02</span>CREW</a>
           </li>
-          <li>
-            <a href="#"><span>03</span>TECHNOLOGY</a>
+          <li class="technology-buttons">
+            <a><span>03</span>TECHNOLOGY</a>
           </li>
         </ul>
       </nav>
@@ -62,17 +63,17 @@
         <img src="assets/shared/icon-close.svg" alt="menu-close" />
       </button>
       <ul>
-        <li>
+        <li class="home-buttons">
           <a><span>00</span>HOME</a>
         </li>
-        <li class="destination-explore-button">
+        <li class="destination-buttons">
           <a><span>01</span>DESTINATION</a>
         </li>
-        <li>
-          <a href="#"><span>02</span>CREW</a>
+        <li class="crew-buttons">
+          <a><span>02</span>CREW</a>
         </li>
-        <li>
-          <a href="#"><span>03</span>TECHNOLOGY</a>
+        <li class="technology-buttons">
+          <a><span>03</span>TECHNOLOGY</a>
         </li>
       </ul>
     </div>
@@ -89,8 +90,8 @@
             world experience!
           </p>
         </div>
-        <div id="explore-container" class="destination-explore-button">
-          <div id="explore"><p>EXPLORE</p></div>
+        <div id="explore-container">
+          <div id="explore" class="destination-buttons"><p>EXPLORE</p></div>
         </div>
       </div>
     </main>
@@ -126,6 +127,28 @@
         </div>
       </div>
     </div>
+    <div id="crew-element">
+      <section id="left-side">
+        <h1 id="meet-your-crew"><span>02</span>MEET YOUR CREW</h1>
+        <div id="commander">
+          <div id="commander-p-name">
+            <h2 id="commander-p"></h2>
+            <h1 id="commander-name"></h1>
+          </div>
+          <p id="commander-description"></p>
+        </div>
+        <div id="radios-buttons">
+          <input id="douglas-hurley" type="radio" name="change-crew" />
+          <input id="mark-shuttleworth" type="radio" name="change-crew" />
+          <input id="victor-glover" type="radio" name="change-crew" />
+          <input id="anousheh-ansari" type="radio" name="change-crew" />
+        </div>
+      </section>
+      <section id="right-side">
+        <div id="back-ground"></div>
+      </section>
+    </div>
+    <div id="technology-element">technbooooooooooologyyyyyyyy</div>
     <!-- CREW PAGE -->
     <script src="script.js"></script>
     <script src="routes.js"></script>
