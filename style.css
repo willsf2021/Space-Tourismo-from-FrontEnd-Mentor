@@ -29,8 +29,16 @@ body {
 }
 
 .background-destination {
-  background-image: url(assets/destination/background-destination-desktop.jpg);
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
   opacity: 100%;
+}
+.background-crew {
+  background-image: url(./assets/crew/background-crew-desktop.jpg);
+  opacity: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -79,10 +87,6 @@ header > nav {
   justify-content: center;
   transition: border-color;
   border-bottom: 3px solid transparent;
-}
-
-#navBar li:nth-child(1) {
-  border-bottom: 3px solid rgba(255, 255, 255);
 }
 
 #navBar li:hover {
@@ -239,9 +243,6 @@ main {
 #mobile-menu ul a {
   text-decoration: none;
 }
-#mobile-menu li:nth-child(1) {
-  border-right: 3px solid rgba(255, 255, 255);
-}
 
 #menu-close {
   background-color: transparent;
@@ -254,7 +255,6 @@ main {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(./assets/home/background-home-tablet.jpg);
     width: 768px;
     margin: auto;
     padding: 0px 40px 0px;
@@ -324,7 +324,6 @@ main {
 
 @media (max-width: 415px) {
   body {
-    background-image: url(./assets/home/background-home-mobile.jpg);
     height: 792px;
     width: 375px;
     margin: auto;
@@ -425,6 +424,7 @@ main {
     outline: 88px solid transparent;
     transition: all 0.45s ease-in-out;
   }
+
   header > nav {
     height: 96px;
     width: 640px;
